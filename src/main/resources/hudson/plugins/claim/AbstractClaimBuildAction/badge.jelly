@@ -1,5 +1,11 @@
 <j:jelly xmlns:j="jelly:core">
 		<j:if test="${it.claimed}">
+		<style>
+		.build-row-cell .pane.build-name {
+			vertical-align: baseline	
+		}
+		</style>
+		<span style="font-size:xx-small">${it.claimedByName} </span>
 		<j:choose>
 			<j:when test="${it.reason != null}">
 			<img width="16" height="16"
