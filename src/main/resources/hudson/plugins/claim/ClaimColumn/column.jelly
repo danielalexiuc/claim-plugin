@@ -25,6 +25,7 @@ THE SOFTWARE.
 <j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:s="/lib/form">
   <td>
     <j:forEach var="action" items="${it.getAction(job)}">
+      <span style="font-size:xx-small">${action.claim.claimedByName}</span>
         <j:choose>
                 <j:when test="${action.claim.reason != null}">   
                         <j:choose>
