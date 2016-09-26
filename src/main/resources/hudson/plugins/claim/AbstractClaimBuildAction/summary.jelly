@@ -16,14 +16,7 @@
 
         function Display(error)
         {
-            reasonText = document.getElementById("errordesc");
-            obj = ${it.fillReason()};
-            if(error == "Default"){
-                reasonText.textContent = "";
-            } else{
-                reasonText.textContent = obj[error];
-            }
-            reasonText.readOnly = true;
+
         }
    </script>
 
